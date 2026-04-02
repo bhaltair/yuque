@@ -23,8 +23,10 @@ export default defineConfig(
     {
       title: '星原学AI',
       description: '星原学AI',
-      base: '/',                      // GitHub Pages 通常用这个
-
+      base: '/yuque/',                      // GitHub Pages 通常用这个
+      sitemap: {
+        hostname: 'https://bhaltair.github.io/yuque/'
+      },
       themeConfig: {
         nav: [
           { text: '首页', link: '/' },   // 指向 fullstack/index.md
