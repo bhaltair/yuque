@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev fullstack",
+    "docs:build": "vitepress build fullstack",
+    "docs:preview": "vitepress preview fullstack"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "vitepress": "^2.0.0-alpha.17",
+    "vitepress-sidebar": "^1.33.1"
+  }
+}
