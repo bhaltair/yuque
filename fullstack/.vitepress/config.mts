@@ -27,6 +27,20 @@ export default defineConfig(
       sitemap: {
         hostname: 'https://bhaltair.github.io/yuque/'
       },
+      head: [
+        [
+          'script',
+          { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-MPV2KE83BV' }
+        ],
+        [
+          'script',
+          {},
+          `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'TAG_ID');`
+        ]
+      ],      
       themeConfig: {
         nav: [
           { text: '首页', link: '/' },   // 指向 fullstack/index.md
